@@ -1,0 +1,123 @@
+/usr/local/lib/python3.7/site-packages/sklearn/externals/joblib/externals/cloudpickle/cloudpickle.py:47: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
+2019-03-24 21:13:49,058 - __main__ - INFO - Using seed 1114839843
+2019-03-24 21:13:49,058 - __main__ - INFO - Loading data
+2019-03-24 21:13:49,058 - __main__ - INFO - ----------
+2019-03-24 21:13:49,062 - data.loader - INFO - Processing Blood Transfusion Service Path: data/blood-transfusion-service.csv, Dimensions: (748, 5)
+2019-03-24 21:13:49,070 - data.loader - INFO - Data Sample:
+      0   1      2   3  4
+0     2  50  12500  98  2
+1     0  13   3250  28  2
+2     1  16   4000  35  2
+3     2  20   5000  45  2
+4     1  24   6000  77  1
+..   ..  ..    ...  .. ..
+743  23   2    500  38  1
+744  21   2    500  52  1
+745  23   3    750  62  1
+746  39   1    250  39  1
+747  72   1    250  72  1
+
+[748 rows x 5 columns]
+2019-03-24 21:13:49,070 - data.loader - INFO - Will pre-process data
+2019-03-24 21:13:49,070 - data.loader - INFO - Pulling features
+2019-03-24 21:13:49,070 - data.loader - INFO - Pulling classes
+2019-03-24 21:13:49,071 - data.loader - INFO - Feature dimensions: (748, 4)
+2019-03-24 21:13:49,071 - data.loader - INFO - Classes dimensions: (748,)
+2019-03-24 21:13:49,071 - data.loader - INFO - Class values: [1 2]
+2019-03-24 21:13:49,071 - data.loader - INFO - Class distribution: [570 178]
+2019-03-24 21:13:49,072 - data.loader - INFO - Class distribution (%): [76.20320856 23.79679144]
+2019-03-24 21:13:49,072 - data.loader - INFO - Sparse? False
+2019-03-24 21:13:49,072 - data.loader - INFO - Binary? True
+2019-03-24 21:13:49,072 - data.loader - INFO - Balanced? True
+/usr/local/lib/python3.7/site-packages/sklearn/utils/validation.py:590: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, DataConversionWarning)
+/usr/local/lib/python3.7/site-packages/sklearn/utils/validation.py:590: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, DataConversionWarning)
+/usr/local/lib/python3.7/site-packages/sklearn/utils/validation.py:590: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, DataConversionWarning)
+/usr/local/lib/python3.7/site-packages/sklearn/utils/validation.py:590: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, DataConversionWarning)
+/usr/local/lib/python3.7/site-packages/sklearn/utils/validation.py:590: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, DataConversionWarning)
+/usr/local/lib/python3.7/site-packages/sklearn/utils/validation.py:590: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, DataConversionWarning)
+2019-03-24 21:13:49,079 - __main__ - INFO - ----------
+2019-03-24 21:13:49,079 - __main__ - INFO - Running experiments
+2019-03-24 21:13:49,079 - __main__ - INFO - Running with dimension 4
+2019-03-24 21:13:49,079 - __main__ - INFO -  Details: ExperimentDetails(ds=<data.loader.BloodTransData object at 0x11846da20>, ds_name=blood trans, ds_readable_name=Blood Transfusion, best_nn_params={'NN__activation': ['logistic'], 'NN__alpha': [1.0], 'NN__hidden_layer_sizes': [(6, 6, 6)], 'NN__learning_rate_init': [0.15]}, threads=-1, seed=1114839843)
+2019-03-24 21:13:49,079 - experiments.base - INFO - Running clustering for PCA with dim param 4
+**********
+<class 'numpy.ndarray'>
+**********
+
+**********
+<class 'numpy.ndarray'>
+**********
+
+****
+****
+
+Fitting 5 folds for each of 1 candidates, totalling 5 fits
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 8 concurrent workers.
+[Parallel(n_jobs=-1)]: Done   2 out of   5 | elapsed:    2.0s remaining:    2.9s
+[Parallel(n_jobs=-1)]: Done   3 out of   5 | elapsed:    2.0s remaining:    1.3s
+[Parallel(n_jobs=-1)]: Done   5 out of   5 | elapsed:    2.0s remaining:    0.0s
+[Parallel(n_jobs=-1)]: Done   5 out of   5 | elapsed:    2.0s finished
+/usr/local/lib/python3.7/site-packages/sklearn/externals/joblib/externals/cloudpickle/cloudpickle.py:47: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
+[CV] NN__activation=logistic, NN__alpha=1.0, NN__hidden_layer_sizes=(6, 6, 6), NN__learning_rate_init=0.15 
+[CV]  NN__activation=logistic, NN__alpha=1.0, NN__hidden_layer_sizes=(6, 6, 6), NN__learning_rate_init=0.15, score=0.5000000000000001, total=   0.0s
+/usr/local/lib/python3.7/site-packages/sklearn/externals/joblib/externals/cloudpickle/cloudpickle.py:47: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
+[CV] NN__activation=logistic, NN__alpha=1.0, NN__hidden_layer_sizes=(6, 6, 6), NN__learning_rate_init=0.15 
+[CV]  NN__activation=logistic, NN__alpha=1.0, NN__hidden_layer_sizes=(6, 6, 6), NN__learning_rate_init=0.15, score=0.5, total=   0.0s
+/usr/local/lib/python3.7/site-packages/sklearn/externals/joblib/externals/cloudpickle/cloudpickle.py:47: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
+/usr/local/lib/python3.7/site-packages/sklearn/externals/joblib/externals/cloudpickle/cloudpickle.py:47: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
+[CV] NN__activation=logistic, NN__alpha=1.0, NN__hidden_layer_sizes=(6, 6, 6), NN__learning_rate_init=0.15 
+[CV]  NN__activation=logistic, NN__alpha=1.0, NN__hidden_layer_sizes=(6, 6, 6), NN__learning_rate_init=0.15, score=0.5, total=   0.0s
+/usr/local/lib/python3.7/site-packages/sklearn/externals/joblib/externals/cloudpickle/cloudpickle.py:47: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
+[CV] NN__activation=logistic, NN__alpha=1.0, NN__hidden_layer_sizes=(6, 6, 6), NN__learning_rate_init=0.15 
+[CV]  NN__activation=logistic, NN__alpha=1.0, NN__hidden_layer_sizes=(6, 6, 6), NN__learning_rate_init=0.15, score=0.49999999999999994, total=   0.0s
+/usr/local/lib/python3.7/site-packages/sklearn/externals/joblib/externals/cloudpickle/cloudpickle.py:47: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
+[CV] NN__activation=logistic, NN__alpha=1.0, NN__hidden_layer_sizes=(6, 6, 6), NN__learning_rate_init=0.15 
+[CV]  NN__activation=logistic, NN__alpha=1.0, NN__hidden_layer_sizes=(6, 6, 6), NN__learning_rate_init=0.15, score=0.5, total=   0.0s
+/usr/local/lib/python3.7/site-packages/sklearn/externals/joblib/externals/cloudpickle/cloudpickle.py:47: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
+/usr/local/lib/python3.7/site-packages/sklearn/externals/joblib/externals/cloudpickle/cloudpickle.py:47: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/pandas/io/pytables.py", line 469, in __init__
+    import tables  # noqa
+  File "/usr/local/lib/python3.7/site-packages/tables/__init__.py", line 93, in <module>
+    from .utilsextension import (
+ImportError: dlopen(/usr/local/lib/python3.7/site-packages/tables/utilsextension.cpython-37m-darwin.so, 2): Library not loaded: @rpath/libblosc.1.dylib
+  Referenced from: /usr/local/lib/python3.7/site-packages/tables/utilsextension.cpython-37m-darwin.so
+  Reason: image not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "run_experiment.py", line 154, in <module>
+    verbose, timings)
+  File "run_experiment.py", line 33, in run_experiment
+    exp.perform_cluster(dim)
+  File "/Users/vgiridhar/Documents/spring 2019/cs 4641/project_3/cmaron_code/CS-7641-assignments/assignment3/experiments/PCA.py", line 73, in perform_cluster
+    hdf_path = self.dump_for_clustering(lambda x: pca.fit_transform(x.get_details().ds.training_x))
+  File "/Users/vgiridhar/Documents/spring 2019/cs 4641/project_3/cmaron_code/CS-7641-assignments/assignment3/experiments/base.py", line 105, in dump_for_clustering
+    ds_2.to_hdf(hdf_path, self._details.ds_name, complib='blosc', complevel=9)
+  File "/usr/local/lib/python3.7/site-packages/pandas/core/generic.py", line 1996, in to_hdf
+    return pytables.to_hdf(path_or_buf, key, self, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/pandas/io/pytables.py", line 278, in to_hdf
+    complib=complib) as store:
+  File "/usr/local/lib/python3.7/site-packages/pandas/io/pytables.py", line 472, in __init__
+    'importing'.format(ex=str(ex)))
+ImportError: HDFStore requires PyTables, "dlopen(/usr/local/lib/python3.7/site-packages/tables/utilsextension.cpython-37m-darwin.so, 2): Library not loaded: @rpath/libblosc.1.dylib
+  Referenced from: /usr/local/lib/python3.7/site-packages/tables/utilsextension.cpython-37m-darwin.so
+  Reason: image not found" problem importing
+/usr/local/lib/python3.7/site-packages/sklearn/externals/joblib/externals/cloudpickle/cloudpickle.py:47: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
