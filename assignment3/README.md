@@ -19,11 +19,11 @@ If this does not work for you, try the `requirements-no-tables.txt` file. Window
 
 ## Overall Flow
 1. Update `run_experiment.py` to use your data sets for dataset1 and dataset2. Also set `best_nn_params` for your data sets (lines 94 and 101).
-2. Run the various experiments (perhaps via `python run_experiment.py --all`)
-3. Plot the results so far via `python run_experiment.py --plot`
+2. Run the various experiments (perhaps via `python3 run_experiment.py --all`)
+3. Plot the results so far via `python3 run_experiment.py --plot`
 4. Update the dim values in `run_clustering.sh` based on the optimal values found in 2 (perhaps by looking at the scree graphs)
 5. Run `run_clustering.sh`
-6. One final run to plot the rest `python run_experiment.py --plot`
+6. One final run to plot the rest `python3 run_experiment.py --plot`
 
 There are clearly some redundant steps here but thankfully the plotting is pretty fast compared to the data generation.
 
@@ -45,7 +45,7 @@ There are different optimal values for each algorithm and each dataset, and usin
 The run_experiment script can be use to generate plots via:
 
 ```
-python run_experiment.py --plot
+python3 run_experiment.py --plot
 ```
 
 Since the files output from the experiments follow a common naming scheme this will determine the problem, algorithm,
