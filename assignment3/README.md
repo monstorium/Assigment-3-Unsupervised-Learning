@@ -1,5 +1,8 @@
 # Unsupervised Learning and Dimensionality Reduction
--Varun Giridhar
+VARUN GIRIDHAR (3.24.2019)
+
+LINK TO CODE & DATA:
+https://github.com/monstorium/Assigment-3-Unsupervised-Learning/tree/master/assignment3
 
 # Data Sets
 Data Set #1: '/data/blood-transfusion-service.csv'
